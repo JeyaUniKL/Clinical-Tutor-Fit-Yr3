@@ -64,7 +64,7 @@ st.caption(
 # Initialize Model & Session State
 if "chat" not in st.session_state:
     model = genai.GenerativeModel(
-        model_name="gemini-3.8-flash",
+        model_name="gemini-2.5-flash",
         system_instruction=SYSTEM_INSTRUCTION,
     )
     st.session_state.chat = model.start_chat(history=[])
